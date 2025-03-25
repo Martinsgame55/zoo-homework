@@ -17,11 +17,34 @@
 
 # Tuto část dopiš
 
-#def pridej(zvire, pocet):
+def pridej(zvire, pocet):
+    global tygri
+    global lvy
+    global opice
+    if(zvire == "tygri"):
+        tygri = tygri+pocet
+    elif(zvire=="lvy"):
+        lvy = lvy+pocet
+    elif(zvire=="opice"):
+        opice = opice+pocet
+    else:
+        print("Zadal si něco špatně")
     
-#def odeber(zvire, pocet):
+def odeber(zvire, pocet):
+    global tygri
+    global lvy
+    global opice
+    if(zvire == "tygr"):
+        tygri = tygri-pocet
+    elif(zvire=="lev"):
+        lvy = lvy-pocet
+    elif(zvire=="opice"):
+        opice = opice-pocet
+    else:
+        print("Zadal si něco špatně")
     
-#def vypis():
+def vypis():
+    print(f"tygrů je {tygri}, lvů je {lvy} a opic je {opice}")
     
 
 
